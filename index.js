@@ -1,6 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (i=0 ; i < array.length ; i++){
+    for (j= i+1 ; j < array.length; j++){
+      if(array[i] + array[j] === target){
+        return true
+      } 
+    }
+  }
+  return false
 }
+
 
 /* 
   Write the Big O time complexity of your function here
@@ -8,7 +17,8 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
-*/
+  choose 1 number from array and iterate till it finds match for adding up to target number 
+*/ 
 
 /*
   Add written explanation of your solution here
